@@ -1,6 +1,6 @@
 // Variables
 
-$handle-size: 3rem;
+$handle-size: 2rem;
 $img-gap: .25rem;
 
 // Heading
@@ -53,22 +53,24 @@ $img-gap: .25rem;
   margin: 0 $img-gap;
   transform: translateX(calc(var(--slider-index) * -100%));
   transition: transform 250ms ease-in-out;
+  align-items: center;
 }
 
 .slider__image {
   flex: 0 0 calc(100% / var(--items-per-screen));
   max-width: calc(100% / var(--items-per-screen));
-  aspect-ratio: 9 / 12;
+  max-height: 80%;
+  aspect-ratio: 8 / 12;
   padding: $img-gap;
   border-radius: 1rem;
-  transition: transform 0.3s linear;
+  transition: transform 0.2s linear;
+
 }
 
 .slider__image:hover{
-  z-index: 1;
+  padding: 0;
   box-shadow: 0 0 0 100vw hsla(0, 0, 0, 0.75);
-  transform: scale(1.1);
-  
+  transform: scale(1.2);
 }
 
 .handle {
@@ -84,7 +86,7 @@ $img-gap: .25rem;
   font-size: 5rem;
   justify-content: center;
   line-height: 0;
-  margin: $img-gap 0;
+  margin: 5% 0;
   transition: background-color 150ms ease-in-out;
   width: $handle-size;
   z-index: 10;
@@ -103,7 +105,6 @@ $img-gap: .25rem;
 .handle:hover,
 .handle:focus {
   background-color: hsla(0, 0, 0, 0.5);
-  
 }
 
 .chevron-icon {
@@ -124,6 +125,9 @@ $img-gap: .25rem;
 }
 
 @media (max-width: 500px) {
+  .handle{
+    font-size: 2.5rem;
+  }
 
   h3 {
     font-size: 1.5rem;
