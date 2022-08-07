@@ -10,7 +10,7 @@ document.addEventListener("click", e => {
   
   const throttleProgressBar = throttle(() => {
     document.querySelectorAll(".progress-bar").forEach(calculateProgressBar)
-  }, 250)
+}, 250)
   window.addEventListener("resize", throttleProgressBar)
   
   document.querySelectorAll(".progress-bar").forEach(calculateProgressBar)
