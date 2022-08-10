@@ -1,0 +1,25 @@
+// Sizes
+
+.icon{
+    height: 35px;
+    width: 35px;
+}
+
+// Colors
+
+.icon--white{
+    fill: #fff;
+}
+
+// Variations
+
+.icon-container{
+    align-items: center;
+    background-color: #f3f9fa;
+    border-radius: 100%;
+    display: inline-flex;
+    height: 64px;
+    justify-content: center;
+    width: 64px;
+}
+

@@ -69,13 +69,13 @@ $img-gap: .25rem;
 
 .slider__image:hover{
   padding: 0;
-  box-shadow: 0 0 0 100vw hsla(0, 0, 0, 0.75);
+  box-shadow: 0 0 0 100vw #000000bf;
   transform: scale(1.2);
 }
 
 .handle {
   align-items: center;
-  background-color: hsla(0, 0, 0, 0.75);
+  background-color: #000000bf;
   border-radius: 1rem;
   border: none;
   color: white;
@@ -104,7 +104,7 @@ $img-gap: .25rem;
 
 .handle:hover,
 .handle:focus {
-  background-color: hsla(0, 0, 0, 0.5);
+  background-color: #00000080;
 }
 
 .chevron-icon {

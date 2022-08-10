@@ -1,0 +1,17 @@
+.block{
+    padding: 4rem 2rem;
+}
+  
+.container{
+max-width: 1440px;
+}
+
+.grid{
+display: grid;
+
+@media (min-width:780px) {
+    &--1x2{
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+}
