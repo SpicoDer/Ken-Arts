@@ -1,0 +1,15 @@
+.btn{
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    border: none;
+}
+
+.btn--plain{
+    background: #FFFFFF;
+}
+
+.btn--transparent{
+    background-color: hsla(0, 0, 0, 0.2);
+    color: #FFFFFF;
+}
+
