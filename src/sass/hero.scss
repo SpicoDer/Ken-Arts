@@ -1,0 +1,61 @@
+@use '../sass/colors' as *;
+
+.hero > .grid{
+    gap: 1rem;
+}
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    padding: 1rem;
+    
+
+    h1{
+        color: $accent-color;
+    }
+
+    .message{
+        padding: 0 1rem;
+        max-width: 48rem;
+        margin: 0 auto;
+    }
+
+}
+
+.hero__img{
+
+    overflow: hidden;
+    img{
+        transform: scale(1.5) translateX(10px);
+    }
+}
+
+.hero__contact{
+    display: grid;
+    justify-content: center;
+
+    .social-links{
+        display: flex;
+        margin: 1rem 0;
+
+        .icon{
+            margin: 0 1rem;
+            transition: 0.15s;
+        }
+
+        .icon:hover{
+            transform: scale(0.8);
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    .hero__img{
+        grid-row-start: span 2;
+
+    }
+
+}

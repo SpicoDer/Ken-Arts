@@ -2,15 +2,10 @@
     padding: 2rem;
 }
 
-.container{
-max-width: 1440px;
-margin: 0 auto;
-}
-
 .grid{
 display: grid;
 
-@media (min-width:780px) {
+@media (min-width:768px) {
     &--1x2{
     grid-template-columns: repeat(2, 1fr);
     }

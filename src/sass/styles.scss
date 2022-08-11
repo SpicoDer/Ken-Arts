@@ -1,8 +1,8 @@
 @use '../sass' as *;
 
 body {
-   background-color: hsl(0, 0%, 100%);
-   color: black;
+   background-color: $primary-color;
+   color: $paragraph-color;
   }
 
 

@@ -1,12 +1,56 @@
+@use '../sass/colors' as *;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 
-*{
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
+::selection{
+  background-color: $accent-color;
+  color: #fff;
+}
+
+body{
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: $paragraph-color;
+}
+
+h1,h2,h3{
+  color: $heading-color;
+  margin: 1rem 0;
+  line-height: 1.1;
+}
+
+h1{
+  font-size: 5rem; 
+}
+
+h2{
+  font-size: 2.2rem;
 }
 
 h3{
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
+p{
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px){
+
+  body{
+      font-size: 2rem;
+  }
+
+  h1{
+      font-size: 8rem;
+  }
+
+  h2{
+      font-size: 3rem;
+  }
+  
+  h3{
+      font-size: 2.4rem;
+  }
+}

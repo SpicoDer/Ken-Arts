@@ -5,6 +5,11 @@
     width: 35px;
 }
 
+.icon--small{
+    height: 25px;
+    width: 25px;
+}
+
 // Colors
 
 .icon--white{
@@ -13,9 +18,10 @@
 
 // Variations
 
-.icon-container{
+.icon--container{
     align-items: center;
     background-color: #f3f9fa;
+    border: 3px solid red;
     border-radius: 100%;
     display: inline-flex;
     height: 64px;
