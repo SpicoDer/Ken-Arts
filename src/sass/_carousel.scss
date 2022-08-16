@@ -1,8 +1,13 @@
 // Variables
 
-$handle-size: 2rem;
-$img-gap: .25rem;
+$handle-size: 5rem;
+$img-gap: .5rem;
 
+
+.carousel{
+  background-color:  #2C2A35;
+  box-shadow: 0 -1rem 25px 10px hsl(251, 12%, 19%);
+}
 // Heading
 
 .carousel__header {
@@ -64,12 +69,11 @@ $img-gap: .25rem;
   padding: $img-gap;
   border-radius: 1rem;
   transition: transform 0.2s linear;
-
+  
 }
 
 .slider__image:hover{
   padding: 0;
-  box-shadow: 0 0 0 100vw #000000bf;
   transform: scale(1.2);
 }
 
@@ -83,7 +87,7 @@ $img-gap: .25rem;
   display: flex;
   flex-grow: 0;
   flex-shrink: 0;
-  font-size: 5rem;
+  font-size: 10rem;
   justify-content: center;
   line-height: 0;
   margin: 5% 0;
@@ -126,7 +130,7 @@ $img-gap: .25rem;
 
 @media (max-width: 500px) {
   .handle{
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
 
   h3 {
